@@ -1,12 +1,87 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MEMVEXA – Dein zweites Gedächtnis</title><meta name="theme-color" content="#030b19"><link rel="icon" href="favicon.png"><link rel="stylesheet" href="styles.css"></head><body><header><div class="wrap nav"><div class="brand">MEMVEXA</div><div class="links"><a href="index.html">Start</a><a href="privacy.html">Datenschutz</a><a href="support.html">Support</a></div></div></header>
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MEMVEXA – Dein zweites Gedächtnis</title>
+  <meta name="theme-color" content="#030b19">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .tester-section{margin:56px 0 24px;padding:28px;border-radius:24px;background:linear-gradient(180deg,rgba(20,35,68,.92),rgba(7,16,34,.96));border:1px solid rgba(120,150,255,.22);box-shadow:0 18px 50px rgba(0,0,0,.28)}
+    .tester-badge{display:inline-block;padding:7px 12px;border-radius:999px;font-size:.85rem;font-weight:700;background:rgba(91,113,255,.16);border:1px solid rgba(125,145,255,.28);margin-bottom:10px}
+    .tester-section h2{margin:4px 0 10px;font-size:clamp(1.8rem,5vw,2.7rem)}
+    .tester-section .intro{opacity:.88;max-width:760px;line-height:1.6}
+    .steps{display:grid;gap:14px;margin:26px 0}
+    .step{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;padding:16px;border-radius:16px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08)}
+    .step-num{width:44px;height:44px;display:grid;place-items:center;border-radius:14px;font-weight:800;background:linear-gradient(135deg,#6f7cff,#9c67ff)}
+    .step h3{margin:2px 0 6px}.step p{margin:0;opacity:.82;line-height:1.5}
+    .action-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+    .test-btn{display:inline-block;text-decoration:none;font-weight:800;padding:12px 16px;border-radius:12px;background:linear-gradient(135deg,#6f7cff,#9c67ff);color:#fff}
+    .test-btn.secondary{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14)}
+    .warning{margin-top:22px;padding:16px;border-radius:14px;background:rgba(255,193,7,.08);border:1px solid rgba(255,193,7,.25);line-height:1.55}
+    @media(max-width:620px){.tester-section{padding:20px}.action-row{flex-direction:column}.test-btn{text-align:center}}
+  </style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="brand">MEMVEXA</div><div class="links"><a href="index.html">Start</a><a href="privacy.html">Datenschutz</a><a href="support.html">Support</a></div></div></header>
+
 <main class="wrap hero">
-<img src="memvexa-brand.png" alt="MEMVEXA – Your Second Brain">
-<h1>Dein zweites <span class="grad">Gedächtnis.</span></h1>
-<p class="lead">MEMVEXA hilft dir, Erinnerungen, Dokumente und wichtige Termine übersichtlich zu speichern und schnell wiederzufinden.</p>
-<a class="cta" href="#features">MEMVEXA entdecken</a>
-<section id="features" class="grid">
-<div class="card"><h3>Erinnerungen</h3><p>Wichtige Informationen strukturiert festhalten und schnell wiederfinden.</p></div>
-<div class="card"><h3>Dokumente</h3><p>Dokumente importieren oder scannen und lokal organisieren.</p></div>
-<div class="card"><h3>Watch</h3><p>Fristen, Termine und Dinge im Blick behalten, die du nicht vergessen möchtest.</p></div>
-<div class="card"><h3>Local-First</h3><p>Deine Inhalte werden primär lokal auf deinem Gerät gespeichert.</p></div>
-</section></main><footer><div class="wrap"><div class="links"><a href="privacy.html">Datenschutz</a><a href="imprint.html">Impressum</a><a href="support.html">Support</a></div><p>© 2026 MEMVEXA by MW</p></div></footer></body></html>
+  <img src="memvexa-brand.png" alt="MEMVEXA – Your Second Brain">
+  <h1>Dein zweites <span class="grad">Gedächtnis.</span></h1>
+  <p class="lead">MEMVEXA hilft dir, Erinnerungen, Dokumente und wichtige Termine übersichtlich zu speichern und schnell wiederzufinden.</p>
+
+  <div class="action-row" style="justify-content:center;margin:22px 0 8px">
+    <a class="cta" href="#features">MEMVEXA entdecken</a>
+    <a class="test-btn" href="#tester">Jetzt kostenlos Tester werden</a>
+  </div>
+
+  <section id="features" class="grid">
+    <div class="card"><h3>Erinnerungen</h3><p>Wichtige Informationen strukturiert festhalten und schnell wiederfinden.</p></div>
+    <div class="card"><h3>Dokumente</h3><p>Dokumente importieren oder scannen und lokal organisieren.</p></div>
+    <div class="card"><h3>Watch</h3><p>Fristen, Termine und Dinge im Blick behalten, die du nicht vergessen möchtest.</p></div>
+    <div class="card"><h3>Local-First</h3><p>Deine Inhalte werden primär lokal auf deinem Gerät gespeichert.</p></div>
+  </section>
+
+  <section id="tester" class="tester-section">
+    <span class="tester-badge">Closed Test · Android</span>
+    <h2>MEMVEXA kostenlos testen</h2>
+    <p class="intro">Wir suchen noch Android-Tester für den geschlossenen Google-Play-Test. Die Teilnahme ist kostenlos. Bitte folge den Schritten in dieser Reihenfolge und bleibe anschließend mindestens 14 Tage im Test angemeldet.</p>
+
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><div>
+        <h3>Google-Gruppe beitreten</h3>
+        <p>Öffne die offizielle MEMVEXA Closed-Test-Gruppe und tritt mit dem Google-Konto bei, das du auch im Play Store verwendest.</p>
+        <div class="action-row"><a class="test-btn" target="_blank" rel="noopener" href="https://groups.google.com/g/memvexa-closed-test/about">Google-Gruppe öffnen</a></div>
+      </div></div>
+
+      <div class="step"><div class="step-num">2</div><div>
+        <h3>Kostenlosen Promocode anfordern</h3>
+        <p>Fülle das kurze Formular aus. Nach deiner Anfrage erhält der MEMVEXA-Entwickler eine Benachrichtigung und sendet dir einen persönlichen Promocode.</p>
+        <div class="action-row"><a class="test-btn" target="_blank" rel="noopener" href="https://forms.gle/UgPH9dXBTLnmsPSs8">Promocode anfordern</a></div>
+      </div></div>
+
+      <div class="step"><div class="step-num">3</div><div>
+        <h3>Promocode im Google Play Store einlösen</h3>
+        <p>Löse den erhaltenen Code mit demselben Google-Konto ein. Bitte kaufe die App nicht versehentlich zum regulären Preis.</p>
+      </div></div>
+
+      <div class="step"><div class="step-num">4</div><div>
+        <h3>MEMVEXA im Play Store öffnen</h3>
+        <p>Öffne anschließend MEMVEXA im Google Play Store und installiere die App.</p>
+        <div class="action-row"><a class="test-btn secondary" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=de.recalldevelopment.memvexa">MEMVEXA im Play Store</a></div>
+      </div></div>
+
+      <div class="step"><div class="step-num">5</div><div>
+        <h3>Mindestens 14 Tage Tester bleiben</h3>
+        <p>Öffne MEMVEXA mindestens einmal und bleibe für mindestens 14 Tage im geschlossenen Test angemeldet. Bitte verlasse den Test in dieser Zeit nicht.</p>
+      </div></div>
+    </div>
+
+    <div class="warning"><strong>Wichtig:</strong> Die Mitgliedschaft in der Google-Gruppe allein reicht nicht aus. Verwende für Gruppe, Promocode und Play Store dasselbe Google-Konto und folge dem vollständigen Testablauf.</div>
+  </section>
+</main>
+
+<footer><div class="wrap"><div class="links"><a href="privacy.html">Datenschutz</a><a href="imprint.html">Impressum</a><a href="support.html">Support</a></div><p>© 2026 MEMVEXA by MW</p></div></footer>
+</body>
+</html>
