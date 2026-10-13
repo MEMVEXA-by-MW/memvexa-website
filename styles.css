@@ -7,3 +7,10 @@
 footer{margin-top:40px;border-top:1px solid #17314b;padding:34px 0 46px;color:#8fa4bb}.footer-inner{display:grid;grid-template-columns:1.5fr auto auto;align-items:start;gap:28px}.footer-inner p{margin:8px 0 0}.footer-inner>.links{align-self:center}
 @media(max-width:760px){.wrap{width:min(100% - 28px,1080px)}.nav{min-height:68px}.nav .links{gap:11px;font-size:.86rem}.portal-hero{padding:66px 0 42px}.app-grid{grid-template-columns:1fr}.app-card{min-height:0}.footer-inner{grid-template-columns:1fr}.detail-hero{grid-template-columns:1fr;align-items:start}.detail-hero .app-logo{width:104px;height:104px}.detail-hero .wide{width:180px;height:auto}}
 @media(max-width:420px){.brand{font-size:.92rem}.nav .links a:first-child{display:none}.button-grid{grid-template-columns:1fr}.button.primary{grid-column:auto}.section-head{align-items:start;flex-direction:column}.app-card{padding:22px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.app-card{transition:none}}
+
+/* CreateMyNFT dual-distribution preview; no checkout until configured. */
+.purchase-status{border:1px solid var(--line);border-radius:12px;padding:12px 16px;color:var(--muted);background:rgba(255,255,255,.025)}
+.page code{overflow-wrap:anywhere;color:#b4e8ff}
+.page .feature-grid>.card h2{margin-top:0}
+.page .feature-grid>.card{display:flex;flex-direction:column}
+.page .feature-grid>.card .button{margin-top:auto}
