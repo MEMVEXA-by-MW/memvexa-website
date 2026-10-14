@@ -1,0 +1,17 @@
+name: IndexNow
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*.html'
+      - 'sitemap.xml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Notify IndexNow
+        run: python3 scripts/notify_indexnow.py
