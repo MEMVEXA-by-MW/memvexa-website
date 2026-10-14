@@ -1,17 +1,28 @@
-name: IndexNow
+name: IndexNow - notify search engines
+
 on:
   push:
-    branches: [main]
+    branches:
+      - main
     paths:
       - '*.html'
+      - '**/*.html'
       - 'sitemap.xml'
+      - 'scripts/notify_indexnow.py'
+      - '.github/workflows/indexnow.yml'
   workflow_dispatch:
+
 permissions:
   contents: read
+
 jobs:
   notify:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - name: Notify IndexNow
+      - name: Checkout website
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Notify IndexNow about changed pages
         run: python3 scripts/notify_indexnow.py
